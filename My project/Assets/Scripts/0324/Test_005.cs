@@ -51,10 +51,4 @@ public class Test_005 : MonoBehaviour
             }
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
