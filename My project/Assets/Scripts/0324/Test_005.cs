@@ -28,7 +28,7 @@ public class Test_005 : MonoBehaviour
         {
             if(1%2 == 0)                               //%는 나머지 값
             {
-                Debug.Log(i);
+                //Debug.Log(i);
             }
         }
 
