@@ -5,38 +5,40 @@ using UnityEngine.UI;
 
 public class Test_004 : MonoBehaviour
 {
-    public int hp = 180;
-    public Text textUI;                                     //상태값을 보여주기 위한 Text UI
-    public Text hpTextUI;                                   //HP를 보여주기 위한 Text UI
-  
-    // Update is called once per frame
+    public int hp = 180;                 //정수 herNum 선언 후 1을 입력
+    public Text textUI;
+    public Text hpTextUI;
+
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))                     //조건문으로 마우스 입력 감지 0 인수는 왼쪽 마우스
+        if (Input.GetMouseButtonDown(0)) //조건문으로 마우스 입력 감지 0인수는 왼쪽 마우스
         {
             hp += 10;
         }
-        if (Input.GetMouseButtonDown(1))                    //조건문으로 마우스 입력 감지 01 인수는 오른쪽 마우스
+        if (Input.GetMouseButtonDown(1))  //조건문으로 마우스 입력 감지 1인수는 오른쪽 마우스
         {
             hp -= 10;
         }
 
-        if (hp <= 50)                                       //50 이하 일 때
+
+        if (hp<= 50)
         {
-            //Debug.Log("도망 !");
+              //  Debug.Log("도망 !");
             textUI.text = "도망 !";
         }
-        else if (hp >= 200)                                 //200 이상 일 때
+            else if (hp >= 200)
         {
-            //Debug.Log("공격 !");
+                //Debug.Log("공격 !");
             textUI.text = "공격 !";
         }
-        else
-        {
-            //Debug.Log("방어 !");
+            else
+            {
+
+             //   Debug.Log("방어 !");
             textUI.text = "방어 !";
         }
 
-        hpTextUI.text = "HP : " + hp.ToString();            //Tostring 정수를 문자열로 바꿔주는 함수 ("HP : 숫자")
+              hpTextUI.text = "HP :" + hp.ToString();   //ToString w정수를 문자열로 바꿔주는 함수 ("HP  : 숫자")
     }
+    
 }
