@@ -459,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754805943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.35, z: -2.06}
+  m_LocalPosition: {x: 0, y: 1.35, z: -4.39}
   m_LocalScale: {x: 5.082807, y: 3.8985, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758619800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.35, z: 2.286}
+  m_LocalPosition: {x: 0, y: 1.35, z: 4.36}
   m_LocalScale: {x: 5.082807, y: 3.8985, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -777,5 +777,13 @@ PrefabInstance:
       propertyPath: projectileController
       value: 
       objectReference: {fileID: 1082386240}
+    - target: {fileID: 6776113317371035914, guid: c1993ce4f891de140b0213813db29870, type: 3}
+      propertyPath: m_Size.y
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6776113317371035914, guid: c1993ce4f891de140b0213813db29870, type: 3}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1993ce4f891de140b0213813db29870, type: 3}
